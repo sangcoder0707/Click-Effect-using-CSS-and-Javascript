@@ -1,0 +1,23 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+ body{
+     background: #1B2631;
+}
+ .ripple{
+     width: 10px;
+     height: 10px;
+     background: transparent;
+     position: fixed;
+     border-radius: 50%;
+     animation: effect 1s linear;
+     border: 1px solid rgba(255, 255, 255, 0.4);
+}
+ @keyframes effect {
+     100%{
+         transform: scale(18);
+         opacity: 0.01;
+    }
+}
